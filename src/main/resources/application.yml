@@ -1,0 +1,15 @@
+# 스프링부트 심플 로깅 설정
+logging:
+  level:
+    root: INFO
+    org.springframework: INFO
+    com.example: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %magenta([%thread]) %highlight([%-3level]) %logger{5} - %msg %n"
+#  file:
+#    name: logs/application.log
+#  logback:
+#    rollingpolicy:
+#      max-file-size: 10MB
+#      total-size-cap: 100MB
+#      max-history: 30
